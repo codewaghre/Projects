@@ -1,165 +1,143 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: gilroy;
+    font-weight: 500;
 }
 
-html, body{
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
-#main{
+#main {
     width: 100%;
     height: 100vh;
-    background-color: rgb(6, 6, 6);
-    /* padding-inline: 10px; */
 }
 
-/* top Section */
-#top{
+#back {
+    width: 100%;
+    height: 100vh;
+}
+
+#back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#top {
     pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    /* background-color: rgba(210, 209, 209, 0.43); */
 }
 
-#workingarea{
+#workingarea {
+    position: relative;
+    margin: 0 auto;
     width: 80%;
     max-width: 1920px;
     height: 100vh;
-    /* background-color: aqua; */
-    margin: 0 auto;
-    position: relative
-
 }
 
-#nav{
-    width: 100%;
-    padding: 36px 0;
-    /* background-color: antiquewhite; */
-    display: flex;
-    gap: 50px;
-    justify-content: space-between;
-
-}
-
-#nleft img{
-    height: 60px;
-}
-
-#nleft , #nright{
+#nav {
     display: flex;
     align-items: center;
-    gap: 40px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 0;
 }
 
-#nav a{
+#nav img {
+    height: 50px;
+}
+
+#nleft,
+#nright {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+#nav a {
     pointer-events: all;
-    color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 13px;
+    color: #fff;
+    font-size: 10px;
     font-weight: 600;
-    letter-spacing: 1px;
-    font-family: "Gilroy";
 }
 
-#hero{
+#hero {
     width: 100%;
-    /* height: 10%; */
-    /*background-color: antiquewhite;
-    */display: flex;
-    justify-content: space-between;
     position: absolute;
     top: 50%;
     left: 0;
     transform: translate(0%, -50%);
-    -webkit-transform: translate(0%, -50%);
-    -moz-transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
-    -o-transform: translate(0%, -50%);
-}
-#heroleft{
-    width: 50%;
-    height: 100%;
-    /* background-color: rgb(242, 0, 255); */
+    display: flex;
+    justify-content: space-between;
+
 }
 
-#heroleft .text{
-    /* background-color: brown; */
-    height: 17vh;
+#heroleft {
+    min-width: 50%;
+}
+
+#heroleft .elem {
+    position: relative;
+    height: 10vw;
     overflow: hidden;
 }
+#heroleft .elem h1:nth-child(1){
+    top: 0;
+}
 
-
-#heroleft .text h1{
-    line-height: 0.9;
-    font-family: "kajiro";
-    src: url(./kajiro/Kajiro/Kajiro\ Bold.ttf);
-    color: white;
-    font-weight: 100;
+#heroleft .elem h1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-family:"kajiro";
+    line-height: .9;
+    color: #fff;
+    font-weight: 400;
     font-size: 11vw;
-    /* font-size: clamp(50px , 14vw, 500px); */
 }
 
 #heroleft button {
+    font-family:kajiro;
+    padding: .8vw 3vw;
     pointer-events: all;
-    margin-top: 2vw;
-    padding: 0.8vw 4vw;
-    font-weight: 100;
+
     font-size: 3vw;
-    font-family: "kajiro";
+    margin-top: 2vw;
+    border-radius: .7vw;
 }
 
-#heroright{
-    width: 25%;
-    color: white;
-    /* background-color: rgb(182, 182, 199); */
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
+#heroright {
+    width: 22%;
+    color: #fff;
+    font-size: 13px;
 }
 
-#imgdiv{
-    width: 100%;
-    height: 180px;
-    /* background-color: rgb(100, 100, 100); */
-    background-image: url(https://images.unsplash.com/photo-1527203561188-dae1bc1a417f?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 10px;
-}
 #heroright p {
     text-align: right;
-    font-size: 14px;
-    font-weight: 300;
-    margin-bottom: 15px;
 }
 
-#heroright p:nth-child(1){
-    margin-top: 10px;
-}
-
-#heroright p:nth-child(4){
+#imagediv {
     margin-top: 30px;
+    width: 100%;
+    height: 180px;
+    background-image: url(https://images.unsplash.com/photo-1527203561188-dae1bc1a417f?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
 }
 
-
-/* Back Section  */
-#back{
-    width: 100%;
-    height: 100vh;
-    /* background-color: red; */
-}
-
-#back img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* background-size: cover;
-    background-position: center; */
+#heroright p:nth-child(3) {
+    margin-top: 30px;
+    margin-bottom: 80px;
 }
