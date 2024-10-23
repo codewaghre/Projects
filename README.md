@@ -32,7 +32,8 @@ Welcome
 
 There were several challenges in these mini projects that we handled. 
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![Screenshot (222)](https://github.com/user-attachments/assets/75f8dc3a-5cb9-4ebe-89e4-a6c75f888628)
+
 ![12](https://github.com/user-attachments/assets/a6878819-7a1c-4933-a012-a2ec9a8459ee)
 
 ![11](https://github.com/user-attachments/assets/b4885fb7-904e-4ddd-adc1-69afcc428631)
